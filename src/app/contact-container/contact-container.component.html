@@ -1,0 +1,13 @@
+  <div class="setWidth">
+    <div class="displayGrid">
+      <div *ngFor="let item of contact">
+          <app-contact-card [item]="item" (content)="addData($event)"></app-contact-card>
+      </div>
+    </div>
+    <div class="inform" *ngIf="flag; else hide">
+      <app-contact-card-details [information]="value"></app-contact-card-details>
+    </div>
+    <ng-template #hide></ng-template>
+  </div>
+  
+  

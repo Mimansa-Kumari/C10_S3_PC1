@@ -1,0 +1,21 @@
+.setWidth
+{
+    display:grid;
+    grid-template-areas: "a1 a2";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+.displayGrid
+{
+    grid-area: a1;
+    display: grid;
+    grid-template-areas: "a1 a1 a1" "b1 b1 b1" "c1 c1 c1" "d1 d1 d1" "e1 e1 e1";
+    gap: 25px;
+    margin-top: 85px;
+    justify-content: space-around;
+}
+.inform
+{
+    grid-area: a2;
+    margin-top: 150px;
+}
